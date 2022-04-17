@@ -1,0 +1,33 @@
+$primary-color: rgb(158, 4, 4);
+
+@mixin button ($width: 45%, $height: 60px, $color: white, $bg-color: $primary-color) {
+    width: $width;
+    height: $height;
+    font-family: 'Dancing Script', cursive;
+    color: $color;
+    background-color: $bg-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px black;
+    transition: transform .5s;
+    &:hover {
+      cursor: pointer;     
+      transform: scale(1.1);
+    }
+}
+
+@mixin title ($font-size: 4rem) {
+    font-family: vascan;
+    color: antiquewhite;
+    text-align: center;
+    font-size: $font-size;
+    width: 90%;
+    display: block;
+    font-weight: bold;
+    text-shadow: 5px 0 1px $primary-color;
+}

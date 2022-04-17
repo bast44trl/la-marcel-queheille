@@ -1,0 +1,31 @@
+@import './variables/variables.scss';
+@import './pages/homepage.scss';
+@import './pages/marcel.scss';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@font-face {
+  font-family: 'vascan';
+  src: local('vascan'), url(../assets/fonts/vascan.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.body {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../assets/img/paysBasque.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.button {
+  @include button;
+  text-decoration: none;
+}

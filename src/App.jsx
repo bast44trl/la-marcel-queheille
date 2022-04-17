@@ -1,13 +1,12 @@
-import './App.css';
-import affiche from './assets/img/affiche.jpg';
+import './styles/styles.scss';
+import Homepage from './components/Homepage';
+import Marcel from './components/Marcel';
 
 function App() {
   return (
     <body className="body">
-      <div className="landing">
-        <img src={affiche} alt="" />
-        <h1>La Marcel Queheille CycloSportive</h1>
-      </div>
+      <Homepage />
+      <Marcel />
     </body>
   );
 }

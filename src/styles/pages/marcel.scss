@@ -1,0 +1,59 @@
+.marcel {
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & img {
+      height: 70%;
+    }
+  }
+
+  .marcel__title-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    & h1 {
+      @include title;
+    }
+    & .marcel-description {
+      width: 800px;
+      height: 350px;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      border: 3px solid $primary-color;
+      padding: 25px;
+      border-radius: 25px;
+      background-color: rgba(255, 255, 255, 0.6);
+      & p {
+        color: black;
+        text-align: justify;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .turn-card {
+    animation: turnCard 0.5s;
+  }
+
+  @keyframes turnCard {
+      from {
+        transform: rotateY(0);
+      } to {
+        transform: rotateY(180deg);
+      }
+  }
+
+  .palmares {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    & ul {
+      list-style: none;
+    }
+  }
