@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import marcel from '../assets/img/photo-ancienne.jpg';
 
 const Marcel = () => {
-  const [turnCard, setTurnCard] = useState(true);
+  const [turnCard, setTurnCard] = useState(false);
   return (
     <div className="marcel" id="marcel">
       <img src={marcel} alt="" />
       <div className="marcel__title-description">
         <h1>Marcel Queheille</h1>
-        <div className={`marcel-description turn-card`}>
+        <div className={`marcel-description`}>
           {turnCard ? (
             <>
               <p>
@@ -28,36 +28,78 @@ const Marcel = () => {
               </p>
             </>
           ) : (
-            <div className="palmares">
-              <div>
-                <h2>Résultats divers</h2>
-                <ul>
-                  <li>1953-1955 : 18 victoires en amateur</li>
-                  <li>
-                    1956 :<li>G.P. Martini à Pau</li>
-                    <li>Ronde des Champions à Tarbes</li>
-                    <li>3e étape du Marché de la Volaille</li>
-                    <li>2e de la Route de France</li>
-                    <li>2e de la Ronde des Espoirs à Mauléon</li>
-                    <li>3e du Tour de Dordogne</li>
-                    <ul>
-                      1957 :<li>2e du Circuit d'Aquitaine</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2>Tour de France</h2>
-                <ul>
-                  <li></li>
-                </ul>
-              </div>
-              <div>
-                <h2>Tour d'Espagne</h2>
-                <ul>
-                  <li></li>
-                </ul>
-              </div>
+            <div className={`palmares`}>
+              <>
+                <div className="palmares-section">
+                  <h2>Résultats divers</h2>
+                  <div className="palmares-section-divers">
+                    <p>
+                      <strong>1953-1955</strong>
+                    </p>
+                    <p>18 victoires en amateur</p>
+                    <p>
+                      <strong>1956</strong>
+                    </p>
+                    <p>G.P. Martini à Pau</p>
+                    <p>Ronde des Champions à Tarbes</p>
+                    <p>3e étape du Marché de la Volaille</p>
+                    <p>2e de la Route de France</p>
+                    <p>2e de la Ronde des Espoirs à Mauléon</p>
+                    <p>3e du Tour de Dordogne</p>
+                    <p>
+                      <strong>1957</strong>
+                    </p>
+                    <p>2e du Circuit d'Aquitaine</p>
+                    <p>
+                      <strong>1959</strong>
+                    </p>
+                    <p>3e étape du Critérium du Dauphiné libéré</p>
+                    <p>9e étape du Tour de France</p>
+                    <p>2e du Tour de l'Aude</p>
+                    <p>
+                      <strong>1960</strong>
+                    </p>
+                    <p>2e de la Polymultipliée</p>
+                    <p>2e du Grand Prix du Midi libre</p>
+                    <p>
+                      <strong>1962</strong>
+                    </p>
+                    <p>4e étape du Circuit d'Aquitaine</p>
+                  </div>
+                </div>
+                <div className="palmares-section">
+                  <div className="palmares-section-tours">
+                    <h2>Tour de France</h2>
+                    <div>
+                      <p>
+                        <strong>1957</strong> : 30e
+                      </p>
+                      <p>
+                        <strong>1959</strong> : 26e,
+                        <br /> vainqueur de la 9e étape
+                      </p>
+                      <p>
+                        <strong>1960</strong> : 50e
+                      </p>
+                      <p>
+                        <strong>1961</strong> : 21e
+                      </p>
+                    </div>
+                    <h2>Tour d'Espagne</h2>
+                    <div>
+                      <p>
+                        <strong>1961</strong> : 26e
+                      </p>
+                      <p>
+                        <strong>1962</strong> : hors délais (2e étape)
+                      </p>
+                      <p>
+                        <strong>1963</strong> : non-partant (9e étape)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </>
             </div>
           )}
         </div>

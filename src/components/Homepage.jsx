@@ -19,12 +19,12 @@ const Homepage = () => {
           <a className="button" href="#marcel">
             <span>Qui était Marcel ?</span>
           </a>
-          <div className="button">
+          <a className="button" href="#parcours">
             <span>Infos pratiques</span>
-          </div>
-          <div className="button">
+          </a>
+          <a className="button" href="mailto:vincentBengo@gmail.com">
             <span>Nous contacter</span>
-          </div>
+          </a>
         </div>
       </div>
     </div>

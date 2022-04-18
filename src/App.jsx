@@ -1,13 +1,15 @@
 import './styles/styles.scss';
 import Homepage from './components/Homepage';
 import Marcel from './components/Marcel';
+import Parcours from './components/Parcours';
 
 function App() {
   return (
-    <body className="body">
+    <div className="body">
       <Homepage />
       <Marcel />
-    </body>
+      <Parcours />
+    </div>
   );
 }
 
