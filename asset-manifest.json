@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/lamarcelqueheille/static/css/main.42613258.css",
+    "main.js": "/lamarcelqueheille/static/js/main.a1459535.js",
+    "static/media/flamme-arrivee.jpg": "/lamarcelqueheille/static/media/flamme-arrivee.3c4bc07085b7878457dc.jpg",
+    "static/media/paysBasque.jpg": "/lamarcelqueheille/static/media/paysBasque.a32216d33f8d57f61c21.jpg",
+    "static/media/photo-ancienne.jpg": "/lamarcelqueheille/static/media/photo-ancienne.9a044f95304c55ccc1fd.jpg",
+    "static/media/affiche.jpg": "/lamarcelqueheille/static/media/affiche.bf702c748eec9a85183b.jpg",
+    "static/media/vascan.ttf": "/lamarcelqueheille/static/media/vascan.ce54c7ceedfbe6cf1c8d.ttf",
+    "index.html": "/lamarcelqueheille/index.html",
+    "main.42613258.css.map": "/lamarcelqueheille/static/css/main.42613258.css.map",
+    "main.a1459535.js.map": "/lamarcelqueheille/static/js/main.a1459535.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42613258.css",
+    "static/js/main.a1459535.js"
+  ]
+}
