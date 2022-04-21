@@ -3,7 +3,7 @@ import affiche from '../assets/img/affiche.jpg';
 
 const Homepage = () => {
   return (
-    <div className="homepage">
+    <div className="homepage" id="homepage">
       <img src={affiche} alt="" />
       <div className="homepage__title-actions">
         <h1>La Marcel Queheille CycloSportive</h1>

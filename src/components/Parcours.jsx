@@ -88,6 +88,9 @@ const Parcours = () => {
           </div>
         )}
       </>
+      <a href="#homepage" className="parcours-button-return">
+        Accueil
+      </a>
     </div>
   );
 };

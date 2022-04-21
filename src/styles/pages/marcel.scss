@@ -1,86 +1,118 @@
 .marcel {
-    height: 100vh;
-    width: 80vw;
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  & .marcel-img {
+    width: 30%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     & img {
-      height: 70%;
-      box-shadow: 2px 2px 5px black;
-      border-radius: 10px;
+      height: 60%;
+      width: 80%;
+      border-radius: 15px;
+      box-shadow: 2px 2px 2px black;
     }
   }
-
-  .marcel__title-description {
+  & .marcel-content {
+    height: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     & h1 {
-      @include title;
-    }
+          @include title;
+        }
     & .marcel-description {
-      box-shadow: 2px 2px 5px black;
-      width: 850px;
-      height: 400px;
-      border: 3px solid $primary-color;
-      padding: 25px;
-      border-radius: 25px;
-      background-color: rgba(255, 255, 255, 0.6);
-      margin-top: 50px;
+      width: 100%;
+      height: 60vh;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: solid 1px $primary-color;
+      border-radius: 15px;
+      box-shadow: 2px 2px 2px black;
+      margin: 20px;
+      padding: 15px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      & p {
-        color: black;
-        text-align: justify;
-        font-size: 1.3rem;
-      }
-    }
-  }
-
-  .palmares {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    align-items: flex-start;
-    & .palmares-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      height: 100%;
-      width: 95%;
-      & div {
-        margin-top: 15px;
-        line-height: 1.2rem;
-        width: 70%;
-        & p {
-          font-size: 1.1rem;
-          & strong {
-            margin-bottom: 25px;
+      & .palmares {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        & .div-separation {
+          width: 2px;
+          height: 100%;
+          background-color: $primary-color;
+        }
+        & .palmares-section:first-child {
+          width: 60%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          & div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 80%;
+            & p {
+              width: 45%;
+              line-height: 1.2rem;
+            }
           }
         }
+        & .palmares-section:last-child {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        & h2 {
+          text-align: center;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          margin: 15px 0;
+        }
+        & .palmares-vuelta {
+          transform: translateY(2vw);
+        }
       }
-      & .palmares-section-divers {
+      & .history {
+        height: 80%;
+        width: 60%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        width: 60%;
-        height: 80%;
-        align-self: flex-start;
-      }
-      & .palmares-section-tours {
-        transform: translateX(120px);
-        width: 90%;
-      }
-      & .palmares-section-tours h2:nth-child(3) {
-        margin-top: 20px;
-      }
-      & h2 {
-        text-align: left;
-        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        & p {
+          font-size: large;
+          text-align: justify;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
       }
     }
-  }
+    & .buttons {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      justify-content: space-between;
+      & .button-palmares, .button-return, .button-video {
+        @include button($width:250px);
+        margin: 0;
+      }
+      & .button-palmares {
+        width: 350px;
+      }
+      & .button-video {
+        width: 150px;
+        margin: 0 -15% 0 5%;
+      }
+      & .video-bg {
+        background-color: black;
+      }
+    }
+  }    
+}
