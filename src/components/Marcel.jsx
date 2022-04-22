@@ -17,7 +17,7 @@ const Marcel = () => {
       </div>
       <div className="marcel-content">
         <h1>Marcel Queheille</h1>
-        <div className={`marcel-description`}>
+        <div className={`${turnVideo && 'video-bg'} marcel-description`}>
           {turnCard && !turnVideo && <History />}
           {!turnCard && !turnVideo && <Palmares />}
           {turnVideo && <MarcelVideo />}

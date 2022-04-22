@@ -1,6 +1,6 @@
 $primary-color: rgb(158, 4, 4);
 
-@mixin button ($width: 45%, $height: 60px, $color: $primary-color, $bg-color: rgba(255, 255, 255, 0.8)) {
+@mixin button ($width: 45%, $height: 6vh, $color: $primary-color, $bg-color: rgba(255, 255, 255, 0.8)) {
     width: $width;
     height: $height;
     font-family: 'Dancing Script', cursive;
@@ -14,13 +14,16 @@ $primary-color: rgb(158, 4, 4);
     align-items: center;
     border-radius: 15px;
     box-shadow: 3px 3px 5px black;
-    transition: transform .5s;
     text-decoration: none;
+    transition: transform .8s, background-color .8s, color .8s;
+    opacity: 0;
+    animation: appear 1s 2s forwards;
     &:hover {
       cursor: pointer;     
-      transform: scale(1.1);
+      transform: scale(1.05);
       background-color: $primary-color;
       color: $bg-color;
+      transition: transform .8s, background-color .8s, color .8s;
     }
 }
 
@@ -33,4 +36,12 @@ $primary-color: rgb(158, 4, 4);
     display: block;
     font-weight: bold;
     text-shadow: 5px 0 1px $primary-color;
+    opacity: 0;
+    animation: appear 1s 1s forwards;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
 }
