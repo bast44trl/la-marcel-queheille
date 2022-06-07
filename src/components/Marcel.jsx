@@ -1,25 +1,23 @@
 import React, { useState } from 'react';
-import marcelJeune from '../assets/img/photo-ancienne.jpg';
-import marcelVieux from '../assets/img/photo-vieux.jpg';
+import marcelYoung from '../assets/img/pic_marcel_young.jpg';
+import marcelOld from '../assets/img/pic_marcel_old.jpg';
 import History from './History';
 import MarcelVideo from './MarcelVideo';
-import Palmares from './Palmares';
+import TrackRecords from './TrackRecords';
 
 const Marcel = () => {
   const [turnCard, setTurnCard] = useState(false);
   const [turnVideo, setTurnVideo] = useState(false);
-  console.log('turnCard : ', turnCard);
-  console.log('turnVideo : ', turnVideo);
   return (
     <div className="marcel" id="marcel">
       <div className="marcel-img">
-        <img src={turnCard ? marcelVieux : marcelJeune} alt="" />
+        <img src={turnCard ? marcelOld : marcelYoung} alt="" />
       </div>
       <div className="marcel-content">
-        <h1>Marcel Queheille</h1>
+        <h1>Marcel</h1>
         <div className={`${turnVideo && 'video-bg'} marcel-description`}>
           {turnCard && !turnVideo && <History />}
-          {!turnCard && !turnVideo && <Palmares />}
+          {!turnCard && !turnVideo && <TrackRecords />}
           {turnVideo && <MarcelVideo />}
         </div>
         <div className="buttons">
@@ -27,7 +25,7 @@ const Marcel = () => {
             Video
           </div>
           <div
-            className="button-palmares"
+            className="button-track-records"
             onClick={() => {
               setTurnVideo(false);
               setTurnCard(!turnCard);
@@ -35,11 +33,11 @@ const Marcel = () => {
           >
             {turnCard ? 'Son palmarès' : 'Son histoire'}
           </div>
-          <a href="#homepage" className="button-return">
-            Accueil
-          </a>
         </div>
       </div>
+      <a href="#homepage" className="button-return">
+        Accueil
+      </a>
     </div>
   );
 };

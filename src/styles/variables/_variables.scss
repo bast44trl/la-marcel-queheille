@@ -1,0 +1,72 @@
+$primary-color: rgb(158, 4, 4);
+$secondary-color : #fcf3e8;
+$main-font: 'vascan';
+$secondary-font: 'Dancing Script', cursive;
+$borded: 10px;
+
+@font-face {
+  font-family: 'vascan';
+  src: local('vascan'), url(../../assets/fonts/vascan.ttf) format('truetype');
+}
+
+@mixin button ($width: 45%, $height: 6vh, $color: $primary-color, $bg-color: rgba(255, 255, 255, 0.9)) {
+    width: $width;
+    height: $height;
+    font-family: 'Dancing Script', cursive;
+    color: $color;
+    background-color: $bg-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $borded;
+    box-shadow: 3px 3px 5px black;
+    text-decoration: none;
+    transition: transform .3s, background-color .3s, color .3s;
+    opacity: 0;
+    animation: appear 1s 2s forwards;
+    &:hover {
+      cursor: pointer;     
+      transform: scale(1.05);
+      background-color: $primary-color;
+      color: $bg-color;
+      transition: transform .3s, background-color .3s, color .3s;
+    }
+}
+
+@mixin link ($font: $secondary-font, $color: $primary-color, $hoverColor: $secondary-color) {
+  text-decoration: none;
+  color: $color;
+  text-shadow: black 1px 1px 1px;
+  font-family: $font;
+  font-size: 2vw;
+  transition: all .3s;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  &:hover {
+    color: $hoverColor;
+    text-shadow: $primary-color 1px 1px 1px;
+  }
+}
+
+@mixin title ($font-size: 4vw) {
+    font-family: vascan;
+    color: $secondary-color;
+    text-align: center;
+    font-size: $font-size;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    text-shadow: 5px 0 1px $primary-color;
+    opacity: 0;
+    animation: appear 1s 1s forwards;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}

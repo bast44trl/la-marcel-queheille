@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
-import arrivee from '../assets/img/flamme-arrivee.jpg';
+import smallRace from '../assets/img/smallRace.png';
+import bigRace from '../assets/img/bigRace.png';
+import RouteInfos from './RouteInfos';
 
 const Parcours = () => {
   const [grandParcours, setGrandParcours] = useState(true);
   const [petitParcours, setPetitParcours] = useState(false);
-  const [horaires, setHoraires] = useState(false);
 
   const handleParcours = (e) => {
-    if (e.includes('Grand')) {
+    if (e.includes('Marcel')) {
       setGrandParcours(true);
       setPetitParcours(false);
-      setHoraires(false);
     }
-    if (e.includes('Petit')) {
+    if (e.includes('cyclotouriste')) {
       setPetitParcours(true);
       setGrandParcours(false);
-      setHoraires(false);
-    }
-    if (e.includes('Horaires')) {
-      setHoraires(true);
-      setGrandParcours(false);
-      setPetitParcours(false);
     }
   };
   return (
@@ -31,63 +25,58 @@ const Parcours = () => {
             className={grandParcours ? 'active' : ''}
             onClick={(e) => handleParcours(e.target.innerHTML)}
           >
-            Grand parcours
+            La Marcel Queheille
           </li>
           <li className="li-separation"></li>
           <li
             className={petitParcours ? 'active' : ''}
             onClick={(e) => handleParcours(e.target.innerHTML)}
           >
-            Petit parcours
-          </li>
-          <li className="li-separation"></li>
-          <li
-            className={horaires ? 'active' : ''}
-            onClick={(e) => handleParcours(e.target.innerHTML)}
-          >
-            Horaires
+            La cyclotouriste
           </li>
         </ul>
       </nav>
-      <>
+      <div className="parcours-content">
         {grandParcours && (
-          <div className="parcours-content">
-            <img src={arrivee} alt="" />
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d93102.8918454389!2d-0.8240166045209566!3d43.178745288506875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e1!4m5!1s0xd56e0e9e082c813%3A0x59612cdaa45fd3f2!2sMaul%C3%A9on-Licharre%2C%2064130!3m2!1d43.220130999999995!2d-0.8895!4m5!1s0xd57aaacee6c8db9%3A0x406651748139610!2sOloron-Sainte-Marie!3m2!1d43.194413!2d-0.6052919999999999!4m5!1s0xd571c0957cc8fd1%3A0x70ccfff571e75487!2sMontory!3m2!1d43.097257!2d-0.819006!4m5!1s0xd56e0e9e082c813%3A0x59612cdaa45fd3f2!2sMaul%C3%A9on-Licharre!3m2!1d43.220130999999995!2d-0.8895!5e0!3m2!1sfr!2sfr!4v1650270951107!5m2!1sfr!2sfr"
-              width="600"
-              height="450"
-              style={{ border: '0' }}
-              allowFullScreen={''}
+          <div className="parcours-content-img">
+            <RouteInfos start="8h30" />
+            <a
+              href="https://www.openrunner.com/route-details/9189539"
+              target="blank"
+              about="Voir les détails du parcours sur OpenRunner"
+            >
+              <div className="map-layout">
+                <p>Voir les détails du parcours</p>
+              </div>
+              <img src={bigRace} alt="big race route" />
+            </a>
+            {/* <iframe
+              title="grandParcours"
               loading="lazy"
-              title="grand-parcours"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+              src="https://www.openrunner.com/route/9189539/embed/fr/3656775a7631767a33666a6a684b53486e3247504f2b466f4953434c714c306835487a565a575166735a673d3a3a99cfe15b7cd0c143e8f92fbba6c9f4e5"
+              height="500px"
+              width="700px"
+              allowFullScreen="allowfullscreen"
+              data-mce-fragment="1"
+            ></iframe> */}
           </div>
         )}
         {petitParcours && (
-          <div className="parcours-content">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m36!1m12!1m3!1d37745.168163851056!2d-0.8720273311026804!3d43.19781483881689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m21!3e1!4m5!1s0xd56e0e9e082c813%3A0x59612cdaa45fd3f2!2sMaul%C3%A9on-Licharre%2C%2064130!3m2!1d43.220130999999995!2d-0.8895!4m3!3m2!1d43.225271899999996!2d-0.8357401!4m3!3m2!1d43.189164999999996!2d-0.8815609999999999!4m5!1s0xd56e0e9e082c813%3A0x59612cdaa45fd3f2!2sMaul%C3%A9on-Licharre%2C%2064130!3m2!1d43.220130999999995!2d-0.8895!5e0!3m2!1sfr!2sfr!4v1650287796840!5m2!1sfr!2sfr"
-              width="600"
-              height="450"
-              style={{ border: '0' }}
-              allowFullScreen={''}
-              title="petitParcours"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <img src={arrivee} alt="" />
+          <div className="parcours-content-img">
+            <a
+              href="https://www.openrunner.com/route-details/12998676"
+              target="blank"
+              about="Voir les détails du parcours sur OpenRunner"
+            >
+              <div className="map-layout">
+                <p>Voir les détails du parcours</p>
+              </div>
+              <img src={smallRace} alt="small race route" />
+            </a>
+            <RouteInfos start="8h35" />
           </div>
         )}
-        {horaires && (
-          <div className="horaires-content">
-            <p>Dossards : 7h Place de la Mairie</p>
-            <p>Départ Grand parcours : 8h Place de la Mairie</p>
-            <p>Départ Petit Parcours : 9h Place de la Mairie</p>
-          </div>
-        )}
-      </>
+      </div>
       <a href="#homepage" className="parcours-button-return">
         Accueil
       </a>
