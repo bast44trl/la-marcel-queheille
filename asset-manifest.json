@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/la-marcel-queheille/static/css/main.10719043.css",
-    "main.js": "/la-marcel-queheille/static/js/main.157b1646.js",
-    "static/media/flamme-arrivee.jpg": "/la-marcel-queheille/static/media/flamme-arrivee.3c4bc07085b7878457dc.jpg",
+    "main.css": "/la-marcel-queheille/static/css/main.c097713b.css",
+    "main.js": "/la-marcel-queheille/static/js/main.364bb5b5.js",
+    "static/media/poster.png": "/la-marcel-queheille/static/media/poster.f9d1b197d08455ad4728.png",
     "static/media/paysBasque.jpg": "/la-marcel-queheille/static/media/paysBasque.a32216d33f8d57f61c21.jpg",
-    "static/media/photo-vieux.jpg": "/la-marcel-queheille/static/media/photo-vieux.1e2eda83a93e0cf91a5c.jpg",
-    "static/media/photo-ancienne.jpg": "/la-marcel-queheille/static/media/photo-ancienne.9a044f95304c55ccc1fd.jpg",
-    "static/media/affiche.jpg": "/la-marcel-queheille/static/media/affiche.bf702c748eec9a85183b.jpg",
+    "static/media/bigRace.png": "/la-marcel-queheille/static/media/bigRace.212958abb829415cf9e1.png",
+    "static/media/smallRace.png": "/la-marcel-queheille/static/media/smallRace.bc64e71aebd81549afdf.png",
+    "static/media/pic_marcel_old.jpg": "/la-marcel-queheille/static/media/pic_marcel_old.1e2eda83a93e0cf91a5c.jpg",
+    "static/media/pic_marcel_young.jpg": "/la-marcel-queheille/static/media/pic_marcel_young.9a044f95304c55ccc1fd.jpg",
     "static/media/vascan.ttf": "/la-marcel-queheille/static/media/vascan.ce54c7ceedfbe6cf1c8d.ttf",
     "index.html": "/la-marcel-queheille/index.html",
-    "main.10719043.css.map": "/la-marcel-queheille/static/css/main.10719043.css.map",
-    "main.157b1646.js.map": "/la-marcel-queheille/static/js/main.157b1646.js.map"
+    "main.c097713b.css.map": "/la-marcel-queheille/static/css/main.c097713b.css.map",
+    "main.364bb5b5.js.map": "/la-marcel-queheille/static/js/main.364bb5b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.10719043.css",
-    "static/js/main.157b1646.js"
+    "static/css/main.c097713b.css",
+    "static/js/main.364bb5b5.js"
   ]
 }
