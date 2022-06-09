@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import smallRace from '../assets/img/smallRace.png';
-import bigRace from '../assets/img/bigRace.png';
+import smallRace from '../assets/img/smallRace.webp';
+import bigRace from '../assets/img/bigRace.webp';
 import RouteInfos from './RouteInfos';
+import { Link } from 'react-router-dom';
 
 const Parcours = () => {
   const [grandParcours, setGrandParcours] = useState(true);
@@ -77,9 +78,9 @@ const Parcours = () => {
           </div>
         )}
       </div>
-      <a href="#homepage" className="parcours-button-return">
+      <Link className="parcours-button-return" to="/la-marcel-queheille">
         Accueil
-      </a>
+      </Link>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -14,10 +15,14 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a href="#marcel">Qui était Marcel ?</a>
+          <Link className="link" to="/la-marcel-queheille/marcel">
+            Marcel
+          </Link>
         </li>
         <li>
-          <a href="#parcours">Infos pratiques</a>
+          <Link className="link" to="/la-marcel-queheille/parcours">
+            Parcours
+          </Link>
         </li>
         <li>
           <a href="mailto:vincent.bengochea@yahoo.fr">Nous contacter</a>

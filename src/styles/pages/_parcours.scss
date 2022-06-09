@@ -84,9 +84,11 @@
     }
   }
   & .parcours-button-return {
-    @include link($font: $main-font, $color: $secondary-color, $hoverColor: $primary-color);
-    width: 100%;
-    text-align: end;
+    @include link($font: $secondary-font, $fontSize: 3vw, $color: $secondary-color, $hoverColor: $primary-color);
+    width: fit-content;
+    position: absolute;
+    right: 5vmin;
+    top: 1vmin;
   }
 }
 
@@ -111,18 +113,5 @@
 
 .active {
   color: $primary-color;
-}
-
-.appear {
-  animation: appear 1s forwards;
-}
-.disappear {
-  animation: appear 1s reverse forwards;
-}
-@keyframes appear {
-  from {
-    opacity: 0
-  } to {
-    opacity: 1
-  }
+  text-decoration: underline;
 }

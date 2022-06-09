@@ -39,7 +39,7 @@ const RouteInfos = ({ start }) => {
       <p>
         <strong>Dossards :</strong>
       </p>
-      <p>Vendredi 5 Août 2022 : de 15h à 20 h</p>
+      <p>Vendredi 5 Août 2022 : de 15h à 20h</p>
       <p>Samedi 6 Août 2022 de 6h00 à 7h30</p>
       <br />
       <p>

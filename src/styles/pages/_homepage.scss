@@ -2,24 +2,25 @@
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   & img {
-    height: 40vw;
+    height: 40vmax;
+    width: 28vmax;
     transform: translateX(-100vw);
     opacity: 0;
     animation: moveToLeft 1s forwards;
   }
-}
-  
-.homepage__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 800px;
-  & h1 {
-    @include title($font-size: 6.5vw);
+  & .homepage__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5vmax;
+    width: 60vmax;
+    & h1 {
+      @include title($font-size: 5.5vmax);
+    }
   }
 }
 

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import marcelYoung from '../assets/img/pic_marcel_young.jpg';
-import marcelOld from '../assets/img/pic_marcel_old.jpg';
+import marcelYoung from '../assets/img/pic_marcel_young.webp';
+import marcelOld from '../assets/img/pic_marcel_old.webp';
 import History from './History';
 import MarcelVideo from './MarcelVideo';
 import TrackRecords from './TrackRecords';
+import { Link } from 'react-router-dom';
 
 const Marcel = () => {
   const [turnCard, setTurnCard] = useState(false);
@@ -35,9 +36,9 @@ const Marcel = () => {
           </div>
         </div>
       </div>
-      <a href="#homepage" className="button-return">
+      <Link className="button-return" to="/la-marcel-queheille">
         Accueil
-      </a>
+      </Link>
     </div>
   );
 };
