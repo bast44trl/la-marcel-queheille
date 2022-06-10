@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/la-marcel-queheille/static/css/main.bac75252.css",
-    "main.js": "/la-marcel-queheille/static/js/main.847f5b11.js",
-    "static/media/paysBasque.webp": "/la-marcel-queheille/static/media/paysBasque.b03361ed0a032b227946.webp",
-    "static/media/pic_marcel_old.webp": "/la-marcel-queheille/static/media/pic_marcel_old.bfe96be60cefa7fbe011.webp",
-    "static/media/pic_marcel_young.webp": "/la-marcel-queheille/static/media/pic_marcel_young.f3ad274ff1c65625795e.webp",
-    "static/media/poster.webp": "/la-marcel-queheille/static/media/poster.a7867ff4aa3187811b9d.webp",
-    "static/media/bigRace.webp": "/la-marcel-queheille/static/media/bigRace.86a675cd291c3a721e08.webp",
-    "static/media/smallRace.webp": "/la-marcel-queheille/static/media/smallRace.c09ca6b323855a5051d1.webp",
-    "static/media/vascan.ttf": "/la-marcel-queheille/static/media/vascan.ce54c7ceedfbe6cf1c8d.ttf",
-    "index.html": "/la-marcel-queheille/index.html",
-    "main.bac75252.css.map": "/la-marcel-queheille/static/css/main.bac75252.css.map",
-    "main.847f5b11.js.map": "/la-marcel-queheille/static/js/main.847f5b11.js.map"
+    "main.css": "/static/css/main.a1abd792.css",
+    "main.js": "/static/js/main.a25e6b07.js",
+    "static/media/paysBasque.webp": "/static/media/paysBasque.b03361ed0a032b227946.webp",
+    "static/media/pic_marcel_old.webp": "/static/media/pic_marcel_old.bfe96be60cefa7fbe011.webp",
+    "static/media/pic_marcel_young.webp": "/static/media/pic_marcel_young.f3ad274ff1c65625795e.webp",
+    "static/media/poster.webp": "/static/media/poster.a7867ff4aa3187811b9d.webp",
+    "static/media/bigRace.webp": "/static/media/bigRace.86a675cd291c3a721e08.webp",
+    "static/media/smallRace.webp": "/static/media/smallRace.c09ca6b323855a5051d1.webp",
+    "static/media/vascan.ttf": "/static/media/vascan.ce54c7ceedfbe6cf1c8d.ttf",
+    "index.html": "/index.html",
+    "main.a1abd792.css.map": "/static/css/main.a1abd792.css.map",
+    "main.a25e6b07.js.map": "/static/js/main.a25e6b07.js.map"
   },
   "entrypoints": [
-    "static/css/main.bac75252.css",
-    "static/js/main.847f5b11.js"
+    "static/css/main.a1abd792.css",
+    "static/js/main.a25e6b07.js"
   ]
 }
