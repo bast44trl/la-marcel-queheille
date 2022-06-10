@@ -15,12 +15,12 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <Link className="link" to="/la-marcel-queheille/marcel">
+          <Link className="link" to="/marcel">
             Marcel
           </Link>
         </li>
         <li>
-          <Link className="link" to="/la-marcel-queheille/parcours">
+          <Link className="link" to="/parcours">
             Parcours
           </Link>
         </li>

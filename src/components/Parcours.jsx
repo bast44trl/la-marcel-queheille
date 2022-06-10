@@ -78,7 +78,7 @@ const Parcours = () => {
           </div>
         )}
       </div>
-      <Link className="parcours-button-return" to="/la-marcel-queheille">
+      <Link className="parcours-button-return" to="/">
         Accueil
       </Link>
     </div>

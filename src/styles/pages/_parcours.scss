@@ -1,7 +1,7 @@
 .parcours {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -50px 0 50px 0;
     width: 50%;
     height: 7vh;
     & ul {
@@ -41,12 +42,15 @@
   & .parcours-content {
     width: 100%;
     height: 70vh;
+    display: flex;
+    justify-content: space-around;
     & .parcours-content-img {
       display: flex;
       justify-content: space-around;
       align-items: center;
       height: 100%;
       width: 100%;
+      max-width: 80vw;
       & a {
         height: 90%;
         text-decoration: none;
@@ -114,4 +118,64 @@
 .active {
   color: $primary-color;
   text-decoration: underline;
+}
+
+//================================================== MEDIA QUERIES ===================================================
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+.parcours * {
+  font-size: 1rem;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .parcours * {
+    font-size: 1rem;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
 }

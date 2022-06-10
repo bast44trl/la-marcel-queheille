@@ -36,7 +36,7 @@ const Marcel = () => {
           </div>
         </div>
       </div>
-      <Link className="button-return" to="/la-marcel-queheille">
+      <Link className="button-return" to="/">
         Accueil
       </Link>
     </div>
