@@ -1,13 +1,12 @@
 import React from 'react';
-
-import NavBar from './NavBar';
 import affiche from '../assets/img/poster.webp';
 
 const Homepage = () => {
   return (
     <div className="homepage" id="homepage">
-      <NavBar />
-      <img src={affiche} alt="Poster of the event" />
+      <a href={affiche} target="blank">
+        <img src={affiche} alt="Poster of the event" />
+      </a>
       <div className="homepage__title">
         <h1>La Marcel Queheille CycloSportive</h1>
       </div>

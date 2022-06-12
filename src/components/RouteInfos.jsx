@@ -1,7 +1,7 @@
 import React from 'react';
 import rightArrow from '../assets/icons/right-arrow.png';
 
-const RouteInfos = ({ start }) => {
+const RouteInfos = ({ start, grandParcours }) => {
   const arrowStyle = {
     height: '2.5rem',
     transform: 'translateY(5px)',
@@ -9,7 +9,11 @@ const RouteInfos = ({ start }) => {
     margin: '-10px 0',
   };
   return (
-    <div className="parcours-infos">
+    <div
+      className={`parcours-infos ${
+        grandParcours ? 'reveal-right' : 'reveal-left'
+      }`}
+    >
       <p>
         <strong>Inscription :</strong>
       </p>

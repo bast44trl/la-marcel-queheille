@@ -3,10 +3,12 @@ import './styles/styles.scss';
 import Homepage from './components/Homepage';
 import Marcel from './components/Marcel';
 import Parcours from './components/Parcours';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="body">
+      <NavBar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route path="/marcel" element={<Marcel />} />

@@ -11,10 +11,10 @@
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   overflow: hidden;
 }
 
