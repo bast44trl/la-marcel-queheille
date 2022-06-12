@@ -1,15 +1,14 @@
 .homepage {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   & img {
-    height: 40vmax;
+    height: 37vmax;
     width: 28vmax;
-    transform: translateX(-100vw);
-    opacity: 0;
-    animation: moveToLeft 1s forwards;
+    margin-top: -5vw;
+    @include scaleBounce;
   }
   & .homepage__title {
     display: flex;

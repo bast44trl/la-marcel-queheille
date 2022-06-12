@@ -7,7 +7,7 @@ import TrackRecords from './TrackRecords';
 import { Link } from 'react-router-dom';
 
 const Marcel = () => {
-  const [turnCard, setTurnCard] = useState(false);
+  const [turnCard, setTurnCard] = useState(true);
   const [turnVideo, setTurnVideo] = useState(false);
   return (
     <div className="marcel" id="marcel">
@@ -15,7 +15,10 @@ const Marcel = () => {
         <img src={turnCard ? marcelOld : marcelYoung} alt="" />
       </div>
       <div className="marcel-content">
-        <h1>Marcel</h1>
+        {!turnVideo && (
+          <h1>{!turnCard ? 'Marcel, son palmarès' : 'Marcel, son histoire'}</h1>
+        )}
+        {turnVideo && <h1>Marcel et ses petits-fils</h1>}
         <div className={`${turnVideo && 'video-bg'} marcel-description`}>
           {turnCard && !turnVideo && <History />}
           {!turnCard && !turnVideo && <TrackRecords />}

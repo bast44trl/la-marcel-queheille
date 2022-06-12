@@ -3,15 +3,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   padding: 0 2vw;
+  @include appear;
   & nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -50px 0 50px 0;
-    width: 50%;
+    margin: -20px 0 20px;
+    width: 40%;
     height: 7vh;
     & ul {
       display: flex;
@@ -20,22 +21,20 @@
       list-style: none;
       width: 100%;
       height: 100%;
-      background-color: black;
-      color: white;
       border-radius: $borded;
-      & li {
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        transition: color .5s;
-        &:hover {
-          cursor: pointer;
-          color: $primary-color;
-        }
+      & .li-grand-parcours {
+        @include navLine($font-family: $main-font, $font-size: 1.3rem);
+        border-radius: 15px 0 0 15px;
       }
+      & .li-petit-parcours {
+        @include navLine;
+        border-radius: 0 15px 15px 0;
+      }  
       & .li-separation {
         width: 1px;
         height: 100%;
         background-color: whitesmoke;
+        z-index: 2;
       }
     }
   }
@@ -52,6 +51,7 @@
       width: 100%;
       max-width: 80vw;
       & a {
+        @include scaling($duration: .8s);
         height: 90%;
         text-decoration: none;
         & img {
@@ -91,7 +91,7 @@
     @include link($font: $secondary-font, $fontSize: 3vw, $color: $secondary-color, $hoverColor: $primary-color);
     width: fit-content;
     position: absolute;
-    right: 5vmin;
+    left: 5vmin;
     top: 1vmin;
   }
 }
@@ -111,13 +111,54 @@
   text-align: center;
 }
 
+.reveal-left {
+  animation: revealingLeft 1s forwards;
+  opacity: 0;
+}
+.reveal-right {
+  animation: revealingRight 1s forwards;
+  opacity: 0;
+}
+
 .signin-price {
   list-style: none;
 }
 
 .active {
-  color: $primary-color;
-  text-decoration: underline;
+  color: $secondary-color !important;
+  background-color: $primary-color !important;
+  box-shadow: 2px 2px 5px white;
+}
+
+@keyframes revealingLeft {
+  from {
+    transform: translateX(-35vw);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(-35vw);
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes revealingRight {
+  from {
+    transform: translateX(35vw);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(35vw);
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 //================================================== MEDIA QUERIES ===================================================
@@ -153,18 +194,103 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-.parcours * {
-  font-size: 1rem;
-}
-}
+  .parcours * {
+    font-size: 1rem;
+  }
+  .parcours {
+    & nav {
+      width: 60%;
+      & ul {
+        display: flex;
+        justify-content: center;
+        width:100%;
+      } 
+    }
+    & .parcours-content {
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: -5vh;
+      & .parcours-content-img {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        width: 100%;
+        max-width: 80vw;
+        & a {
+          @include scaling;
+          height: 90%;
+          text-decoration: none;
+          & img {
+            height: 100%;
+            position: relative;
+            top: -100%;
+            border-radius: $borded;
+          }
+        }
+      }
+    }
+  }
+  
+  .parcours-infos {
+    height: 80%;
+    width: 40%;
+  }
+  }
 
-/* iPads (portrait) ----------- */
+
+/* ============================================== iPads (portrait) ================================================= */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
   .parcours * {
     font-size: 1rem;
+  }
+  .parcours {
+    & nav {
+      width: 80%;
+      margin-top: -15vh;
+      & ul {
+        display: flex;
+        justify-content: center;
+        width:100%;
+      } 
+    }
+    & .parcours-content {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: -5vh;
+      & .parcours-content-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        max-width: 80vw;
+        & a {
+          @include scaling;
+          height: 50%;
+          text-decoration: none;
+          & img {
+            height: 100%;
+            position: relative;
+            top: -100%;
+            border-radius: $borded;
+          }
+        }
+      }
+    }
+  }
+  
+  .parcours-infos {
+    height: 40%;
+    width: 80%;
   }
 }
 

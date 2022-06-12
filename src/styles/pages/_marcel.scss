@@ -1,32 +1,34 @@
 .marcel {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
-  padding: 3vh 2vw;
+  padding: 0 2vw 3vh;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  @include appear;
   & .marcel-img {
     width: 25vw;
-    height: 90%;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     & img {
-      height: 425px;
-      width: 280px;
+      height: 100%;
+      width: 85%;
       border-radius: 15px;
       box-shadow: 2px 2px 2px black;
     }
   }
   & .marcel-content {
-    height: 90%;
+    height: 70vh;
     width: 65vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     & h1 {
-      @include title;
+      @include title($font-size: 2.8vw);
     }
     &
     .video-bg {
@@ -35,12 +37,12 @@
     } 
     & .marcel-description {
       width: 100%;
-      height: 425px;
+      height: 60vh;
       background-color: rgba(255, 255, 255, 0.9);
       border: solid 1px $primary-color;
       border-radius: 15px;
       box-shadow: 2px 2px 2px black;
-      margin: 20px;
+      margin: 0 20px 20px;
       padding: 15px;
       display: flex;
       justify-content: center;
@@ -100,14 +102,14 @@
         }
       }
       & .history {
-        height: 80%;
+        height: 60vh;
+        padding: 5vh 0;
         width: 70%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         & p {
-          font-size: large;
           line-height: 1.8rem;
           text-align: justify;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -131,6 +133,6 @@
   @include link($font: $secondary-font, $fontSize: 3vw, $color: $secondary-color, $hoverColor: $primary-color);
   width: fit-content;
   position: absolute;
-  right: 5vmin;
+  left: 5vmin;
   top: 1vmin;
 }

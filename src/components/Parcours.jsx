@@ -23,14 +23,14 @@ const Parcours = () => {
       <nav>
         <ul>
           <li
-            className={grandParcours ? 'active' : ''}
+            className={`li-grand-parcours ${grandParcours ? 'active' : ''}`}
             onClick={(e) => handleParcours(e.target.innerHTML)}
           >
             La Marcel Queheille
           </li>
           <li className="li-separation"></li>
           <li
-            className={petitParcours ? 'active' : ''}
+            className={`li-petit-parcours ${petitParcours ? 'active' : ''}`}
             onClick={(e) => handleParcours(e.target.innerHTML)}
           >
             La cyclotouriste
@@ -40,7 +40,7 @@ const Parcours = () => {
       <div className="parcours-content">
         {grandParcours && (
           <div className="parcours-content-img">
-            <RouteInfos start="8h30" />
+            <RouteInfos start="8h30" grandParcours={grandParcours} />
             <a
               href="https://www.openrunner.com/route-details/9189539"
               target="blank"
@@ -51,15 +51,6 @@ const Parcours = () => {
               </div>
               <img src={bigRace} alt="big race route" />
             </a>
-            {/* <iframe
-              title="grandParcours"
-              loading="lazy"
-              src="https://www.openrunner.com/route/9189539/embed/fr/3656775a7631767a33666a6a684b53486e3247504f2b466f4953434c714c306835487a565a575166735a673d3a3a99cfe15b7cd0c143e8f92fbba6c9f4e5"
-              height="500px"
-              width="700px"
-              allowFullScreen="allowfullscreen"
-              data-mce-fragment="1"
-            ></iframe> */}
           </div>
         )}
         {petitParcours && (
@@ -74,7 +65,7 @@ const Parcours = () => {
               </div>
               <img src={smallRace} alt="small race route" />
             </a>
-            <RouteInfos start="8h35" />
+            <RouteInfos start="8h35" grandParcours={grandParcours} />
           </div>
         )}
       </div>
