@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1abd792.css",
-    "main.js": "/static/js/main.af6a37d8.js",
+    "main.css": "/static/css/main.b49c1a84.css",
+    "main.js": "/static/js/main.f750ce43.js",
     "static/media/paysBasque.webp": "/static/media/paysBasque.b03361ed0a032b227946.webp",
     "static/media/pic_marcel_old.webp": "/static/media/pic_marcel_old.bfe96be60cefa7fbe011.webp",
     "static/media/pic_marcel_young.webp": "/static/media/pic_marcel_young.f3ad274ff1c65625795e.webp",
@@ -10,11 +10,11 @@
     "static/media/smallRace.webp": "/static/media/smallRace.c09ca6b323855a5051d1.webp",
     "static/media/vascan.ttf": "/static/media/vascan.ce54c7ceedfbe6cf1c8d.ttf",
     "index.html": "/index.html",
-    "main.a1abd792.css.map": "/static/css/main.a1abd792.css.map",
-    "main.af6a37d8.js.map": "/static/js/main.af6a37d8.js.map"
+    "main.b49c1a84.css.map": "/static/css/main.b49c1a84.css.map",
+    "main.f750ce43.js.map": "/static/js/main.f750ce43.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1abd792.css",
-    "static/js/main.af6a37d8.js"
+    "static/css/main.b49c1a84.css",
+    "static/js/main.f750ce43.js"
   ]
 }
