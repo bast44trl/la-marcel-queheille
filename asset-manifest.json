@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a1abd792.css",
-    "main.js": "/static/js/main.a25e6b07.js",
+    "main.js": "/static/js/main.af6a37d8.js",
     "static/media/paysBasque.webp": "/static/media/paysBasque.b03361ed0a032b227946.webp",
     "static/media/pic_marcel_old.webp": "/static/media/pic_marcel_old.bfe96be60cefa7fbe011.webp",
     "static/media/pic_marcel_young.webp": "/static/media/pic_marcel_young.f3ad274ff1c65625795e.webp",
@@ -11,10 +11,10 @@
     "static/media/vascan.ttf": "/static/media/vascan.ce54c7ceedfbe6cf1c8d.ttf",
     "index.html": "/index.html",
     "main.a1abd792.css.map": "/static/css/main.a1abd792.css.map",
-    "main.a25e6b07.js.map": "/static/js/main.a25e6b07.js.map"
+    "main.af6a37d8.js.map": "/static/js/main.af6a37d8.js.map"
   },
   "entrypoints": [
     "static/css/main.a1abd792.css",
-    "static/js/main.a25e6b07.js"
+    "static/js/main.af6a37d8.js"
   ]
 }
