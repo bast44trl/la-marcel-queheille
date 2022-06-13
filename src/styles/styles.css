@@ -196,7 +196,7 @@ h1 {
 }
 
 .button {
-  width: 45%;
+  width: 200px;
   height: 6vh;
   font-family: 'Dancing Script', cursive;
   color: #9e0404;
@@ -534,13 +534,13 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .marcel .marcel-content .buttons .button-track-records, .marcel .marcel-content .buttons .button-video {
-  width: 25%;
+  width: 200px;
   height: 6vh;
   font-family: 'Dancing Script', cursive;
   color: #9e0404;
@@ -567,7 +567,7 @@ h1 {
   opacity: 0;
   -webkit-animation: appear .5s .5s forwards;
           animation: appear .5s .5s forwards;
-  margin: 0;
+  margin-left: 20px;
 }
 
 .marcel .marcel-content .buttons .button-track-records:hover, .marcel .marcel-content .buttons .button-video:hover {

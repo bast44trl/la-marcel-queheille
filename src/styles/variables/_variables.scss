@@ -10,7 +10,7 @@ $borded: 10px;
   font-display: swap;
 }
 
-@mixin button ($width: 45%, $height: 6vh, $color: $primary-color, $bg-color: rgba(255, 255, 255, 0.9)) {
+@mixin button ($width: 200px, $height: 6vh, $color: $primary-color, $bg-color: rgba(255, 255, 255, 0.9)) {
     width: $width;
     height: $height;
     font-family: 'Dancing Script', cursive;
@@ -73,7 +73,7 @@ $borded: 10px;
   background-color: black;
   color: grey;
   font-size: $font-size;
-  transition: color .5s;
+  transition: color .5s, background-color .5s;
   &:hover {
     cursor: pointer;
     color: $primary-color;
